@@ -1,0 +1,23 @@
+@media (max-width: 575px) {
+    .container-submit {
+        max-width: 285px;
+    }
+    .container-form {
+        max-width: 285px;
+    }
+    form label {
+        font-size: 18px;
+        text-align: center;
+    }
+    form input {
+        width: 265px;
+    }
+    form button {
+        font-size: 14px;
+        width: 220px;
+        height: 50px;
+    }
+    form input[type=color] {
+        padding: 0 80px;
+    }
+}
