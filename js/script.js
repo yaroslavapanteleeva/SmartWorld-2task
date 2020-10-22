@@ -33,7 +33,7 @@ inputFile.addEventListener('change', (e) => {
 });
 
 function parser (clone) {
-    let wrapper = document.querySelector('.container');
+    let wrapper = document.querySelector('.container-form');
     let form = document.createElement('form');
     let fields = clone.fields;
     let references = clone.references;
