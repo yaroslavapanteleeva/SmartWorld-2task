@@ -18,6 +18,8 @@ inputFile.addEventListener('change', (e) => {
         const clone = JSON.parse(text);
         
         parser(clone);
+        btnCreate();
+
 
         
 
@@ -182,6 +184,24 @@ function parser (clone) {
 
     
       
+}
+
+function btnCreate() {
+    const wrapFormSubmit = document.querySelector('.container-submit'),
+        formDelete = document.querySelectorAll('form')[1],
+        inputFile = document.querySelector('.form-submit__input');
+    let btn = document.createElement('button');
+    let btnText = document.createTextNode('Очистить/Удалить');
+    btn.classList.add('btn');
+    btn.append(btnText);
+    wrapFormSubmit.append(btn);
+    
+
+    btn.addEventListener('click', () => {
+        formDelete.parentNode.removeChild(formDelete);
+        inputFile.value = '';
+        btn.parentNode.removeChild(btn);
+    });
 }
 
 
