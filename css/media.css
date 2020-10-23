@@ -1,9 +1,21 @@
+@media (max-width: 767px) {
+    .container-submit {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
 @media (max-width: 575px) {
     .container-submit {
         max-width: 285px;
+        flex-direction: column;
     }
     .container-form {
         max-width: 285px;
+    }
+    form {
+        padding: 15px 10px 35px;
     }
     form label {
         font-size: 18px;
